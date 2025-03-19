@@ -16,7 +16,7 @@ export default function ContentHome() {
       <div className="flex justify-center items-center flex-row pt-10">
         <div className="w-full h-96 border rounded-lg text-white flex justify-between items-center bg-zinc-900 bg-gradient-to-r from-zinc-950/35 via-zinc-900/40 to-zinc-950/35 mr-16 ml-16 overflow-hidden">
           <div className="px-10 mt-6 md:-mt-6">
-            <img src="assets/logo.png" alt="logo" width={128} height={80} className="w-28 h-20 mb-5 select-none" />
+            <img src="public/logo.png" alt="logo" width={128} height={80} className="w-28 h-20 mb-5 select-none" />
 
             <h1 className="text-4xl font-bold uppercase hidden md:inline">brasil realidade virtual</h1>
             <p className="text-base">Conheça o melhor servidor de MTA do momento! Faça amigos e crie sua <br />família ou seja de alguma gang!</p>
@@ -37,7 +37,7 @@ export default function ContentHome() {
               </Link>
             </div>
           </div>
-          <img src="assets/cj-render.jpg" alt="" width={400} height={200} className="hidden md:block pt-20" />
+          <img src="public/cj-render.jpg" alt="" width={400} height={200} className="hidden md:block pt-20" />
         </div>
 
       </div>

@@ -5,7 +5,7 @@ export default function Header() {
     <header className="w-full h-16 bg-[#18181b] text-white flex flex-row justify-between items-center pl-16 pr-16 text-[14px] border-b-2 border-amber-50">
       <div className="flex flex-row justify-between items-center">
         <Link to={"/"} className="pr-4">
-          <img src="assets/logo.png" alt="" width={60} height={60} />
+          <img src="public/logo.png" alt="" width={60} height={60} />
         </Link>
         <ul className="flex flex-row justify-between">
           <li><Link to={"/"} className="hover:bg-[#353535] p-2 rounded-sm">Inicio</Link></li>
