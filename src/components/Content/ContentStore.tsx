@@ -59,7 +59,7 @@ export default function ContentStore() {
 
       {/* Formulário */}
       <div className="flex flex-row justify-between items-top gap-4">
-        <div className="rounded-md p-6 bg-zinc-900 border border-zinc-700 max-w-[310px] w-full">
+        <div className="rounded-md p-6 bg-zinc-900 border border-zinc-700 max-w-[310px] w-full h-full">
           <h2 className="text-lg font-semibold mb-4">Filtros:</h2>
 
           {/* AQUI ESTÁ A CORREÇÃO */}
@@ -135,12 +135,47 @@ export default function ContentStore() {
             </form>
           </Form>
         </div>
-        <div className="rounded-md p-6 bg-zinc-900 border border-zinc-700 w-full">
-          <div className="flex justify-baseline items-center gap-4 ">
-            <Card Help={"Ajuda"} ID={100} Title={"vip colaborador"} Valor={150} Img={"src/assets/B_V.png"} />
-            <Card Help={"Ajuda"} ID={100} Title={"vip colaborador"} Valor={150} Img={"src/assets/B_V.png"} />
-            <Card Help={"Ajuda"} ID={100} Title={"vip colaborador"} Valor={150} Img={"src/assets/B_V.png"} />
-            <Card Help={"Ajuda"} ID={100} Title={"vip colaborador"} Valor={150} Img={"src/assets/B_V.png"} />
+        <div className="rounded-md p-6 bg-zinc-900 border border-zinc-700 w-full max-w-[1060px]">
+          <div className="flex justify-baseline items-center gap-4 flex-wrap">
+            {/* VIPS */}
+            <Card Help={["Sem sentir fome e sede", "2 carros","2 motos", "3 Skins", "4 armas: Desert Eagle | AK-47 | M4 | TEC-9","Blindagem","Cor Colorida no Carro"]} ID={100} Title={"Vip Diamante"} Valor={80} Img={"src/assets/B_V.png"} />
+            <Card Help={["Sem sentir fome e sede", "2 carros","1 moto", "2 Skins" ,"3 armas: Desert Eagle | AK-47 | TEC-9"]} ID={100} Title={"Vip Ouro"} Valor={50} Img={"src/assets/B_V.png"} />
+            <Card Help={["Sem sentir fome e sede", "1 carros","1 moto","2 armas: Desert Eagle | AK-47"]} ID={100} Title={"Vip Platina"} Valor={30} Img={"src/assets/B_V.png"} />
+            <Card Help={["Sem sentir fome e sede", "1 carros","1 arma: Desert Eagle"]} ID={100} Title={"Vip Bronze"} Valor={15} Img={"src/assets/B_V.png"} />
+
+            {/* ORGS */}
+            <Card Help={["Apenas favelas sem modelagens", "Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Facção Mensal"} Valor={40} Img={"src/assets/B_V.png"} />
+            <Card Help={["Base (comunitária)", "01 viatura (plotagem)", "02 skins (até 7MB)"]} ID={100} Title={"Corporação Mensal"} Valor={40} Img={"src/assets/B_V.png"} />
+
+            {/* EXTRAS */}
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD para remover seu banimento!"]} ID={100} Title={"unban temporário"} Valor={50} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD para remover seu banimento!"]} ID={100} Title={"unban permanente"} Valor={100} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"carro exclusivo"} Valor={60} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"remover advertência"} Valor={40} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"skin privada"} Valor={25} Img={"src/assets/B_V.png"} />
+
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Helicoptéro Corp"} Valor={20} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Rocam"} Valor={15} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Base Privada"} Valor={30} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Viatura Adicional"} Valor={25} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Troca de Viatura"} Valor={10} Img={"src/assets/B_V.png"} />
+
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Favela/Base Privada"} Valor={35} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Função Extra"} Valor={25} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Carro Adicional"} Valor={25} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Troca de Carro"} Valor={10} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"Troca de Favela"} Valor={15} Img={"src/assets/B_V.png"} />
+
+            {/* DINHEIRO */}
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"R$1.000.000,00"} Valor={20 } Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"R$5.000.000,00"} Valor={60} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"R$10.000.000,00"} Valor={70} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"R$30.000.000,00"} Valor={100} Img={"src/assets/B_V.png"} />
+
+            {/* IDs */}
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"10 à 49"} Valor={100} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"50 à 99"} Valor={80} Img={"src/assets/B_V.png"} />
+            <Card Help={["Comprou? Abra um ticket no nosso DISCORD solicitando seu benefício!"]} ID={100} Title={"+100"} Valor={40} Img={"src/assets/B_V.png"} />
           </div>
         </div>
       </div>

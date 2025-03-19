@@ -5,7 +5,7 @@ import AlertD from "../Alert/Alert";
 interface ICardProps {
   Title: String
   Valor: Number
-  Help: String
+  Help: string[]
   ID: Number
   Img: String
 }
@@ -17,7 +17,7 @@ export default function Card({ Img, Help, ID, Title, Valor }: ICardProps) {
   }
 
   return (
-    <div className="rounded-md bg-zinc-900 border border-zinc-700 w-full p-4">
+    <div className="rounded-md bg-zinc-900 border border-zinc-700 w-full max-w-[235px] p-4">
       <CardHeader>
         <img src={`${Img || ""}`} alt="" className="rounded-md" />
       </CardHeader>
@@ -31,7 +31,7 @@ export default function Card({ Img, Help, ID, Title, Valor }: ICardProps) {
         <div className="flex justify-between items-center gap-2">
           <button onClick={() => addItem(ID, Title, Valor)} className="rounded-md border border-zinc-700 w-full p-4 h-10 hover:cursor-pointer flex justify-center items-center bg-green-400 hover:bg-green-500">Adicionar</button>
           {/* <button onClick={() => question(Help)} className="rounded-md border border-zinc-700 w-full p-4 h-10 hover:cursor-pointer flex justify-center items-center hover:bg-gray-500">?</button> */}
-          <AlertD />
+          <AlertD help={Help}/>
         </div>
       </CardFooter>
     </div>

@@ -3,7 +3,11 @@ import { AlertDialog, AlertDialogContent, AlertDialogAction } from "../ui/alert-
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 
-function AlertD() {
+interface AlertProps {
+  help: string[]
+}
+
+function AlertD({ help }: AlertProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   // Função para mostrar o AlertDialog
@@ -14,8 +18,6 @@ function AlertD() {
   const closeDialog = () => {
     setIsOpen(false);
   };
-
-  const dados = ["a", "b", "c", "d", "e", "f", "g"]
 
   return (
     <div>
@@ -29,7 +31,7 @@ function AlertD() {
 
           <p className="text-sm font-semibold">Descrição: </p>
           {
-            dados.map((dado) => {
+            help.map((dado) => {
               return <p className='text-sm mb-[-5px]'>{dado}.</p>
             })
           }

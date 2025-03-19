@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Content2 from "./Content2";
+import { Bot } from "lucide-react";
 
 export default function ContentHome() {
   let playersInServer: number = 0
@@ -31,7 +32,7 @@ export default function ContentHome() {
                 Ir à loja!
               </Link>
               <Link to={"https://discord.gg/jU5QVfmszN"} className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 text-primary-foreground shadow h-9 px-4 py-2 w-fit text-sm border border-zinc-700 bg-zinc-900 hover:bg-zinc-950 hover:cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-shopping-cart w-5 h-5 mr-2"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                <Bot className="w-5 h-5 mr-2" />
                 Discord
               </Link>
             </div>
